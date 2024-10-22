@@ -1,0 +1,106 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  color: #1C70BF;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  margin-inline: auto;
+  margin-top: 150px;
+  border: 5px solid #1C70BF;
+  border-radius: 30px;
+  width: 800px;
+  text-align: center;
+  padding: 25px;
+}
+h1 {
+  margin-bottom: 25px;
+}
+.header-hero {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.user {
+  text-align: left;
+}
+
+.user h3 {
+  margin-bottom: 15px;
+}
+.user > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-right: 5px double #1C70BF;
+  padding-right: 80px;
+}
+.user > div > button , .computer button{
+  background-color: #A3D9FF;
+  border: 2px solid #1C70BF;
+  color: #1C70BF;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 80px;
+}
+
+.computer h3 {
+  margin-bottom: 55px;
+}
+.score {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-block: 25px;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.btn-group button {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1C70BF;
+  border-radius: 9px;
+  width: 300px;
+  background-color: #FFF;
+  border: 2px solid #1C70BF;
+}
+
+.active {
+
+  border: 2px solid green !important ;
+  background-color: #B1F1BC !important;
+}
